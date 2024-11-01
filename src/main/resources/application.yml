@@ -1,0 +1,41 @@
+server:
+  port: 8089
+spring:
+  application:
+    name: User_service
+  #Postgres
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ktv
+    username: postgres
+    password: 2003
+  #JPA
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database: postgresql
+    properties:
+      hibernate:
+        format_sql: true
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: vichhaichhorm169@gmail.com
+    password: cbcx ktwd jzme aqmi
+    default-encoding: UTF-8
+    verify:
+      host: http://localhost:8089
+    properties:
+      mail:
+        mime:
+          charset: UTF
+        smtp:
+          writetimeout: 1800
+          connectiontimeout: 10000
+          timeout: 10000
+          auth: true
+          starttls:
+            required: true
+            enable: true
+
+
